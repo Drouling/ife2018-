@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task001</title>
+</head>
+<body>
+    <input id="name" type="text">    
+    <button id="submit-btn">Submit</button>
+    <script>
+    var text = document.getElementById("name");
+    var subBtn = document.getElementById("submit-btn");
+    subBtn.onclick = function () {
+        console.log(text.value);
+    }
+    text.onkeydown = function getKey(e) {
+        if (e.keyCode == 13) {
+            console.log(text.value);
+        }
+        if (e.keyCode == 27) {
+            text.value = "";
+        }
+    }
+    </script>
+</body>
+</html>

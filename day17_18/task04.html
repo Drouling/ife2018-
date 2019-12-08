@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <table></table>
+    <script>
+        window.onload= mulTable;
+        var node = document.getElementsByTagName("table")[0];
+        function mulTable() {
+            var t;
+            for (var n = 1; n <= 9; n++) {
+                var newTr = document.createElement("tr");
+                for (var m = 1; m <= 9; m++) {
+                    if (m <= n){
+                        t = n * m;
+                        var newTd = document.createElement("td");
+                        newTd.innerHTML = m + "*" + n + "=" + t;
+                        newTr.appendChild(newTd);
+                        console.log(m + "*" + n + "=" + t);
+                    }
+                }
+                node.appendChild(newTr);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 1600px;
+    font-family: "Montserrat",sans-serif;
+    color: #141414;
+}
+body > div {
+    border-bottom: 1px solid rgba(20, 20, 20, 0.102);
+}
+.text-center {
+    margin: 0 auto;
+    text-align: center;
+}
+div .tit {
+    font-size: 42px;
+}
+/*header*/
+header {
+    padding-top: 200px;
+    width: 100%;
+    height: 990px;
+    color: #fff;
+    background-image: url(img/Background_1.jpg);
+}
+header .text-center:nth-child(1) {
+    width: 766px;
+}
+header .tit {
+    font-size: 62px;
+    line-height: 1.161;
+}
+header .tit + p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.702);
+    line-height: 1.6;
+}
+#sign_up {
+    padding-top: 60px;
+    width: 968px;
+    height: 248px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+#sign_up .sub-tit {
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.75;
+}
+#sign_up .sub-tit+p {
+    margin-top: 1em;
+    margin-bottom: 40px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.302);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+header input[type=text] {
+    margin-right: 25px;
+    padding-left: 20px;
+    width: 290px;
+    height: 50px;
+    font-size: 14px;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0);
+}
+header input:nth-of-type(1) {
+    color: #fff;
+}
+header input:nth-of-type(2) {
+    color: rgba(255, 255, 255, 0.302);
+}
+header input[type=submit] {
+    width: 125px;
+    height: 50px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    background-color: #fff;
+}
+/*part1*/
+#part_1 {
+    padding: 80px 190px 0px;
+    width: 100%;
+    height: 710px;
+}
+#part_1 > div:nth-child(1) {
+    width: 657px;
+}
+#part_1 p:first-of-type {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 2;
+}
+#features {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 40px auto;
+}
+#features > div {
+    width: 440px;
+    height: 90px;
+    margin: 35px 85px;
+    font-size: 16px;
+    color: rgba(20, 20, 20, 0.702);
+    line-height: 1.625;
+}
+#features img {
+    float: right;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: 25px;
+}
+#features .text {
+    float: right;
+    width: 355px;
+}
+/*part2*/
+#part_2 {
+    padding-top: 180px;
+    padding-left: 310px;
+    width: 100%;
+    height: 800px;
+    color: #fff;
+    background-image: url(img/Background_2.jpg);
+}
+#part_2 .text {
+    width: 365px;
+}
+#part_2 .tit {
+    line-height: 1.238;
+}
+#part_2 .tit + p {
+    margin-top: 30px;
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 1.556;
+    color: rgba(255, 255, 255, 0.702);
+}
+#part_2 button {
+    margin-right: 30px;
+    width: 240px;
+    height: 60px;
+    font-size: 12px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+#part_2 button:nth-of-type(1) {
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+#part_2 button:nth-of-type(2) {
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.302);
+    background-color: rgba(255, 255, 255, 0)
+}
+/*part3*/
+#part_3 {
+    padding-top: 95px;
+    width: 100%;
+    height: 580px;
+}
+#part_3 .tit {
+    line-height: 1.238;
+}
+#part_3 div {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px auto;
+    width: 965px;
+}
+#part_3 section {
+    width: 245px;
+    height: 310px;
+    font-size: 16px;
+    line-height: 1.625;
+    color: rgba(20, 20, 20, 0.702);
+}
+#part_3 img {
+    margin-bottom: 18px;
+}
+/*crew*/
+#crew {
+    width: 100%;
+    height: 1084px;
+}
+#crew > div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 970px;
+    height: 730px;
+}
+#crew .team {
+    position: relative;
+}
+#crew .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding-top: 105px;
+    width: 470px;
+    height: 340px;
+    color: #fff;
+    background-color: rgba(20, 20, 20, 0.651);
+}
+#crew .team:hover .cover{
+    display: block;
+}
+#crew .sub-tit {
+    font-size: 20px;
+    line-height: 1.6;
+}
+#crew .sub-tit +p {
+    font-size: 12px;
+    line-height: 2.333;
+}
+.cover img {
+    margin: 20px;
+}

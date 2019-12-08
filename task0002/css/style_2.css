@@ -1,0 +1,46 @@
+h1{
+	text-align:center;
+	margin-top:50px;
+	color:#fff;
+}
+ul{
+	list-style: none;
+	padding-left:0;
+	
+}
+ul li{
+	list-style: none;
+}
+h2{
+	clear:both;
+}
+p{
+	clear:both;
+	margin:0.3em auto;
+}
+.content li{
+	float:left;
+	margin-right: 20px;
+}
+li span{
+	font-weight:bold;
+	margin-right: 5px;
+}
+
+#my{
+	position: relative;
+	width:100%;
+	height: auto;
+    display: flex;    
+}
+.tit{
+	position: absolute;
+	height:100%;
+	width:180px;
+	padding-top:0px;
+	background-color: #65a5fa;
+}
+.content{
+	padding-left: 200px;
+	height:auto;
+}

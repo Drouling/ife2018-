@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+#my1{
+    height: 100px;
+    min-width: 400px;
+}
+#my1 .mid{
+    width: 100%;
+    height: 100%;
+    background-color:#ccc;
+}
+#my1 .left{
+    width: 200px;
+    height: 100%;
+    float:left;
+    background-color: red;
+}
+#my1 .right{
+    width:200px;
+    height: 100%;
+    float: right;
+    background-color: blue;
+}
+
+#my2{
+    height: 100px;
+    min-width: 150px;
+    padding-left: 150px;
+    padding-right:200px;
+}
+#my2 .mid{
+    width:100%;
+    height: 100%;
+    float:left;
+    background-color: #ccc;
+}
+#my2 .left{
+    position: relative;
+    right:150px;
+    width: 150px;
+    height: 100%;
+    float:left;
+    margin-left: -100%;
+    background-color: red;
+}
+#my2 .right{
+    position: relative;
+    left:200px;
+    width: 200px;
+    height: 100%;
+    float:left;
+    margin-left: -200px;
+    background-color: blue;
+}
+
+#my3{
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+#my3 .mid{
+    height: 100%;
+    margin:0 200px;
+    background-color: #ccc;
+}
+#my3+.left{
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-left: -100%;
+    background-color: red;
+}
+.left+.right{
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-left: -200px;
+    background-color: blue;
+}

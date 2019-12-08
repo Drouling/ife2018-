@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mydate = new Date();
+        var hour = mydate.getHours();
+        var str = "";
+        if (hour < 4) {
+            str = "凌晨好";
+        }
+        else if (hour < 11) {
+            str = "上午好";
+        }
+        else if (hour < 13) {
+            str = "中午好";
+        }
+        else if (hour < 17) {
+            str = "下午好";
+        }
+        else {
+            str = "晚上好";
+        }
+        document.write(str);
+    </script>
+</body>
+</html>

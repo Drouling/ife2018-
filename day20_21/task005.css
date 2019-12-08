@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+#smile {
+    width: 480px;
+    height: 480px;
+    background-image: url("images/erik_ce204002.jpg");
+    background-repeat: no-repeat;
+}

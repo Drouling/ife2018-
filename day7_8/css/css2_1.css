@@ -1,0 +1,17 @@
+#my{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.left{
+    width: 30%;
+    height:100%;
+    float:left;
+    background-color: red;
+}
+.right{
+    width: 70%;
+    height:100%;
+    float:left;
+    background-color: blue;
+}

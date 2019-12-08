@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        var isNum;
+        function add() {
+            var a = parseInt(document.getElementById("first-number").value);
+            var b = parseInt(document.getElementById("second-number").value);
+            document.getElementById("result").innerHTML = a + b ;       
+        }
+        function minus() {
+            var a = parseInt(document.getElementById("first-number").value);
+            var b = parseInt(document.getElementById("second-number").value);
+            document.getElementById("result").innerHTML = a - b; 
+        }
+        function times() {
+            var a = parseInt(document.getElementById("first-number").value);
+            var b = parseInt(document.getElementById("second-number").value);
+            document.getElementById("result").innerHTML = a * b; 
+        }
+        function divide() {
+            var a = parseInt(document.getElementById("first-number").value);
+            var b = parseInt(document.getElementById("second-number").value);
+            if (b == 0) {
+                document.getElementById("result").innerHTML = "除数不为0";
+                console.log("b=0");
+            }
+            else{
+                document.getElementById("result").innerHTML = a / b; 
+            }
+        }
+        function determine() {
+            var a = document.getElementById("first-number").value;
+            var b = document.getElementById("second-number").value;
+            if (a == "" || b == "") {
+                isNum = false;
+                console.log("非数字");
+                error();
+            }
+            else {
+                isNum = true;
+            }
+        }
+        function error() {
+            document.getElementById("result").innerHTML = "请输入数字";
+        }
+        document.getElementById("add-btn").onclick 
+            = function(){
+                determine();
+                if (isNum) {
+                    add();
+                }
+            }; 
+        document.getElementById("minus-btn").onclick 
+            = function(){
+                determine();
+                if (isNum) {
+                    minus();
+                }
+            }; 
+        document.getElementById("times-btn").onclick
+            = function(){
+                determine();
+                if (isNum) {
+                    times();
+                }
+            };  
+        document.getElementById("divide-btn").onclick
+            = function(){
+                determine();
+                if (isNum) {
+                    divide();
+                }
+            }; 
+    </script>
+</body>
+</html>
